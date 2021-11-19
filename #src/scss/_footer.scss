@@ -1,0 +1,39 @@
+.footer {
+	background-color: #010021;
+	padding: 34px 0px;
+	color: #fff;
+	&__inner {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item + &__item {
+		margin-left: 20px;
+	}
+	
+		
+
+	
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.25px;
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -130px;
+	}
+	
+}
+.footer__item-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

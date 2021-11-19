@@ -1,0 +1,178 @@
+.header__inner {
+	min-height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	margin-right: 75px;
+}
+.menu {
+	margin-right: auto;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	font-weight: 700;
+}
+.menu__list {
+	display: flex;
+}
+.menu__list-item {
+	position: relative;
+	+ {
+		.menu__list-item {
+			margin-left: 40px;
+		}
+	}
+}
+.menu__list-link {
+	color: #333333;
+	transition: all .2s;
+	&:hover {
+		color: #659DEA !important;
+		&::after {
+			transition: all .5s;
+			opacity: 1;
+		}
+	}
+	
+}
+.header__btn {
+	position: relative;
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #000;
+}
+.pop-up {
+	width: 135px;
+	height: 43px;
+	padding: 8px 9px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.01em;
+	color: #2F2F2F;
+	background-color: #E5E5E5;
+	border-radius: 0px 8px 8px 8px;
+	position: absolute;
+	right: 38px;
+	bottom: -51px;
+	display: none;
+}
+.pop-up--active {
+	display: block;
+}
+.header__btn-item {
+	color: #333333;
+	+ {
+		.header__btn-item {
+			margin-left: 12px;
+		}
+	}
+}
+.language {
+	padding-left: 15px;
+	padding-right: 13px;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 9px;
+		height: 13px;
+		background-image: url('../img/arrow.png');
+		background-position: center center;
+		background-size: auto;
+		background-repeat: no-repeat;
+		right: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 11px;
+		height: 11px;
+		background-image: url('../img/language-ru.png');
+		background-position: center center;
+		background-size: auto;
+		background-repeat: no-repeat;
+		left: 0px;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+}
+.pulse {
+	display: inline-block;
+	position: relative;
+	border: 3px solid transparent;
+	border-radius: 12px;
+	background: #fafafa;
+	background-clip: padding-box;
+	padding: 5px 12px 5px 36px;
+	color: rgb(251, 70, 38);
+	&::after {
+		position: absolute;
+		top: -3px;
+		bottom: -3px;
+		left: -3px;
+		right: -3px;
+		background: linear-gradient(180deg, #FD1010 , #EF892B );
+		content: '';
+		z-index: -1;
+		border-radius: 12px;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		width: 19px;
+		height: 18px;
+		background-image: url('../img/pulseitem.svg');
+		background-position: center center;
+		background-size: auto;
+		background-repeat: no-repeat;
+		left: 9px;
+		transform: translateY(-50%);
+		top: 48%;
+	}
+}
+.contact {
+	display: inline-block;
+	color: #659DEA;
+	padding: 8px 13px 9px 35px;
+	border: 3px solid #659DEA;
+	border-radius: 12px;
+	position: relative;
+	background-color: transparent;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 27px;
+		height: 18px;
+		background-image: url('../img/contact-img.svg');
+		background-position: center center;
+		background-size: auto;
+		background-repeat: no-repeat;
+		left: 5px;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+}
+.menu__list-link--active {
+	color: #659DEA;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		height: 3px;
+		border-radius: 3px;
+		background-color: #659DEA;
+		left: -2px;
+		right: -2px;
+		bottom: -5px;
+	
+	}
+}

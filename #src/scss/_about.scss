@@ -1,0 +1,247 @@
+.about{
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+	&__map {		
+		
+	}
+	&__content {
+		max-width: 491px;
+		text-align: right;
+	}
+	&__content-text {
+		margin-bottom: 20px;
+	}
+	&__title {
+		margin-bottom: 24px;
+	}
+	&__btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 22px;
+			&-box {
+				padding: 4px 14px;
+				background-color: #F4F5F7;
+				border-radius: 12px;
+				max-width: 702px;
+				height: 36px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+	}
+	// &__btn + &__btn {
+	// 	margin-left: 22px;
+	// }
+	&__btn {
+		white-space: nowrap;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14px;
+		color: #000000;
+		background: inherit;
+		padding: 6px 11px;
+		
+		border-radius: 12px;
+	
+	}
+	&__btn--active {
+		
+		background-color: #fff;
+		transition: all 0.3s ease;
+		
+		
+		
+	}
+	&__developers {
+		margin-bottom: 70px;
+		min-height: 500px;
+	}
+	&__developers--block {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 49px;
+	}
+	&__developer {
+		overflow: hidden;
+		max-width: 315px;
+		min-height: 454px;
+		background-color: #fff;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+		border-radius: 12px;
+		&-list {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			min-height: 54px;
+			background-color: #fff;
+			border-radius: 12px;
+			padding: 7px 15px;
+			margin-bottom: 10px;
+		}
+		&-list-minimg {
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			object-fit: cover;
+			overflow: hidden;
+			margin-right: 33px;
+		}
+		&-list-name {
+			width: 200px;
+			display: block;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 32px;
+			color: #2F2F2F;
+		}
+		&-list-items {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 5px;
+			
+		}
+		&-list-item{
+			width: 16px;
+			height: 16px;
+		}
+		
+		&-list-text {
+			width: 180px;
+			font-size: 13px;
+			line-height: 15px;
+			letter-spacing: -0.02em;
+			color: #000000;
+			margin-left: 50px;
+		}
+		
+		&-list-skills {
+			display: flex;
+			margin-left: auto;
+		}
+		&-box {
+			padding: 0px 17px 15px;
+		}
+		&-img {
+			width: 100%;
+			height: 307px;
+			object-fit: cover;
+			margin-bottom: 8px;
+		}
+		&-info {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 12px;
+		}
+		&-name {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 32px;
+		}
+		&-items  {
+			display: flex;
+			align-items: center;
+			max-width: 100px;
+			flex-wrap: wrap;
+		}
+		&-items picture  {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&-text {
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 15px;
+			display: flex;
+			align-items: center;
+			letter-spacing: -0.02em;
+			color: #000000;
+			margin-bottom: 8px;
+		}
+		&-profile {
+			font-weight: 400;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			letter-spacing: 0.2px;
+			color: #2F2F2F;
+			margin-bottom: 8px;
+		}
+		&-skills {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+
+		}
+		&-skill {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 22px;
+			text-align: center;
+			letter-spacing: 0.3px;
+			color: #FFFFFF;
+			padding: 0px 10px;
+			border-radius: 12px;
+
+		}
+		&-skill + &-skill {
+			margin-left: 5px;
+		}
+
+	}
+}
+.about__developer-items picture {
+	margin-left: 8px;
+}
+
+.skill-orange {
+	background: #EF892B;
+}
+.skill-blue {
+	background: #59B5EE;
+}
+.skill-green {
+	background: #00B881;
+}
+.skill-yellow {
+	background:#EABB13;
+}
+.skill-purple {
+	background:#6E31BC;
+}
+.skill-grey {
+	background: #7C7A7A;
+}
+.skill-red {
+	background: #FD1010;
+}
+.skill-pink {
+	background: #EC41B2;
+}
+
+.slack,
+.telegram,
+.github {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.slack {
+	background-image: url('../img/slack.svg');
+}
+.telegram {
+	background-image: url('../img/telegram.svg');
+}
+.github {
+	background-image: url('../img/github.svg');
+}
+.place-card-large {
+	display: none;
+}

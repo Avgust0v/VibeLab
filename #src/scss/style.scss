@@ -1,0 +1,123 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "_reset";
+
+@import "_iconsfont";
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 32px;
+	color: #2F2F2F;
+	background-color: #fafafa;
+	height: 100%;
+}
+
+.container-max {
+	max-width: 1332px;
+	padding: 0px 10px;
+	margin: 0 auto;
+}
+.container {
+	max-width: 1050px;
+	padding: 0px 10px;
+	margin: 0 auto;
+}
+.blue-link {
+	color: #659DEA;
+	
+}
+.title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	letter-spacing: -0.5px;
+	color: #2F2F2F;
+}
+
+.form {
+	&__inner {
+		text-align: center;
+		margin-bottom: 120px;
+	}
+	&-btn {
+		background: #6546DA;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+		border-radius: 12px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		color: #FFFFFF;
+		padding: 15px 25px;
+		margin-left: 15px;
+	}
+	&-input {
+		width: 486px;
+		height: 55px;
+		padding: 0px 12px 0px ;
+		font-family: 'Roboto', sans-serif;
+		font-style: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		border-radius: 12px;
+			
+		&::placeholder {
+			color: rgba(51, 51, 51, 0.65);
+			font-weight: 500;
+		}
+
+	}
+}
+
+.landing-link {
+	font-size: 18px;
+	line-height: 32px;
+	color: rgba(47, 47, 47, 0.75);
+	margin-bottom: 12px;
+}
+.body--bg-color {
+	background-color: #010021;
+	
+	
+	
+}
+.body--color  {
+	color: #fff !important; 
+	
+}
+.pulse--bg-color {
+	background: #010021 !important;
+	background-clip: padding-box !important;
+	
+	
+}
+.language--color {
+	color: #fff !important;
+}
+
+
+@import "fonts";
+@import "_header";
+@import "_info";
+@import "_cooperation";
+@import "_about-us";
+@import "_possibilities";
+@import "_footer";
+@import "_communication";
+@import "_services";
+@import "_projects";
+@import "_pulse";
+@import "_about";
+
+
+
+

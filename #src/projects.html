@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.min.css">
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js" defer></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js" defer></script>
+		<script src="https://kit.fontawesome.com/3ddebe24f0.js" crossorigin="anonymous" defer></script>
+		<script src="js/script.js" defer></script>
+		<title>VibeLab</title>
+	</head>
+	<body>
+		<div class="body__wrapper">
+			@@include('_header.html')
+			<div class="main">
+				<div class="container">
+					<p class="landing-link">Портфолио</p>
+					<div class="projects__inner">
+						<h2 class="title">Наши проекты</h2>
+						
+							<div id="toggle" class="toggle ">
+								<div id="toggle-btn-block" class="toggle-btn"> <img src="img/square.svg" alt="">  <span id="toggle-active" class="toggle-active"></span></div>
+								<div id="toggle-btn-list" class="toggle-btn"><img src="img/line.svg" alt="">  </div>
+							</div>
+						
+						
+						
+					</div>
+					<div id="projects-out" class="projects__out projects--display-grid">
+						
+						
+							
+							
+						
+						
+					</div>
+					
+				</div>
+
+			</div>
+			@@include('_footer.html')
+		</div>
+		
+		
+		
+	
+	</body>
+</html>
+
+
+

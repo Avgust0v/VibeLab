@@ -1,0 +1,73 @@
+@keyframes radio {
+	0% {
+		top: -30px;
+	}
+	100% {
+		top: 50px;
+	}
+}
+@keyframes star {
+	100% {
+		transform: rotate(0deg);
+		width: 140px;
+		height: 156px;
+	}
+}
+.info {
+	padding: 50px 0px 140px 0px;
+	background-color: #fff;
+}
+.info__inner {
+	position: relative;
+}
+.info__container {
+	height: 260px;
+	position: relative;
+}
+.info__container-title {
+	color: #000;
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 75px;
+	margin-bottom: 10px;
+}
+.info__container-subtitle {
+	max-width: 611px;
+	font-size: 18px;
+	line-height: 32px;
+	padding-bottom: 50px;
+	position: absolute;
+	bottom: -120px;
+	left: 0px;
+}
+.radio {
+	position: absolute;
+	top: 30px;
+	left: 782px;
+	animation-name: radio;
+	animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.star__item {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: -66px;
+	left: 377px;
+	transform: rotate(-45deg);
+	animation-name: star;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+.text--static {
+	position: absolute;
+	right: 90px;
+}
+
+.text--typing {
+	
+
+}

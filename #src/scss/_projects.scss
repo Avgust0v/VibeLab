@@ -1,0 +1,377 @@
+.projects {
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 12px;
+		margin-bottom: 24px;
+	}
+	
+	&-out__list-item{
+		display: flex;
+		cursor: pointer;
+		align-items: center;
+		height: 62px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.25px;
+		color: #2F2F2F;
+		transition: .3s;
+		margin-bottom: 2px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		
+
+		
+		
+		&:hover {
+			background-color: #ffff;
+		}
+	}
+	&-out__list-wrapper{
+		display: flex;
+		height: 52px;
+		align-items: center;
+		position: relative;
+		
+		&::after {
+			
+			content: '';
+			height: 1px;
+			width: 96.5%;
+			position: absolute;
+			right: 0px;
+			bottom: -7px;
+			background-color: rgba(47, 47, 47, 0.05);
+		}
+		
+	}
+	&-out__list-img {
+		height: 46px;
+		width: 46px;
+		border-radius: 50%;
+		background-image: url('../img/projects-minimg-1.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+		margin-left: 16px;
+	}
+	&-out__list-title {
+		width: 448px;
+		margin-left: 36px;
+		
+	}
+	&-out__list-lvl {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 77px;
+		margin-left: 28px;
+		
+	}
+	&-out__list-time {
+		position: relative;
+		text-align: right;
+		width: 100px;
+		margin-left: 28px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	&-out__list-programmer {
+		text-align: right;
+		width: 100px;
+		margin-left: 28px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	&-out__list-date {
+		width: 120px;
+		text-align: right;
+	}
+	&--display-grid {
+		display: grid;
+		grid-row-gap: 40px;
+		grid-column-gap: 54px;
+		
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	&__out {
+		
+		margin-bottom: 140px;
+		
+	}
+	&__title-block{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		color: #6F6F6F;
+		margin-bottom: 15px;
+	}
+	&__title-box {
+		display: flex;
+		
+	}
+	&-item {
+		width: 309px;
+		height: 300px;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+		border-radius: 12px;
+		overflow: hidden;
+		transition: all .3s;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.02);
+		}
+		&__box{
+			height: 122px;
+			position: relative;
+			overflow: hidden;
+			
+		}
+		&__inner {
+			height: 178px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-weight: 500;
+			padding: 13px;
+			
+			
+		}
+		&__title {
+			font-size: 14px;
+			line-height: 24px;
+			letter-spacing: 0.2px;
+			margin-bottom: 8px;
+			max-height: 45px;
+			overflow: hidden;
+			&--black {
+				color: #2F2F2F;
+			}
+		}
+		&__text {
+			font-size: 12px;
+			line-height: 22px;
+			letter-spacing: 0.3px;
+			margin-bottom: 15px;
+			max-height: 66px;
+			overflow: hidden;
+		}
+		&__icons {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 14px;
+			&-box {
+				display: flex;
+			}
+		}
+		&__worktime {
+			margin-left: 12px;
+			padding-left: 20px;
+			position: relative;
+		}
+		&__programmers {
+			padding-left: 20px;
+			position: relative;
+		}
+		&__complexity-item {
+			margin: 1px;
+			width: 7px;
+			height: 14px;
+			border-radius: 12px;
+		}
+		&__icons-complexity {
+			display: flex;
+			
+		}
+	}
+}
+.fonst-padding {
+	padding-left: 20px;
+	position: relative;
+}
+
+
+.main {
+	flex: 1 1 auto;
+}
+
+.toggle {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 36px;
+	width: 130px;
+	background: #F4F5F7;
+	border-radius: 12px;
+	cursor: pointer;
+	
+	
+	
+
+}
+.body__wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+	
+
+.toggle-active {
+	position: absolute;
+	width: 56px;
+	height: 26px;
+	background-color: #fff;
+	border-radius: 12px;
+	top: 4px;
+	left: 5px;
+	transition: .3s;
+	
+}
+
+
+
+
+
+.projects--gradient-1 {
+	background: linear-gradient(262.16deg, #EF892B 8.15%, #6546DA 98.06%) !important;
+	color: #fff !important ;
+}
+.projects--text-gradient-1{
+	background: linear-gradient(262.16deg, #EF892B 8.15%, #6546DA 98.06%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+}
+
+.text--black {
+	color: #2F2F2F;
+}
+
+.text--silver {
+	color: rgba(47, 47, 47, 0.75);
+}
+
+.text--orange {
+	color: #EF892B;
+}
+.text--green {
+	color: #00B881;
+}
+.text--red {
+	color: #FD1010;
+}
+.lvl--orange {
+	background: #EF892B;
+	
+}
+.lvl--orange-border {
+	border: 1px solid #EF892B;
+}
+.lvl--white {
+	background: #fff;
+}
+.lvl--white-border {
+	border: 1px solid #ffffff;
+}
+
+.lvl--green {
+	background: #00B881;
+}
+.lvl--green-border {
+	border: 1px solid #00B881;
+}
+.lvl--red {
+	background:  #FD1010;
+}
+.lvl--red-border {
+	border: 1px solid #FD1010;
+}
+
+.title-margin {
+	margin-left: 100px;
+}
+.subtitle-margin {
+	cursor: pointer;
+	
+}
+.subtitle-margin + .subtitle-margin {
+	margin-left: 32px;
+}
+.subtitle-arrow {
+
+	padding-right: 17px;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 11px;
+		height: 6px;
+		background-image: url('../img/projects-arrow.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		right: 0px;
+		top: 55%;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+};
+.subtitle-arrow--rotate {
+	padding-right: 17px;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 11px;
+		height: 6px;
+		background-image: url('../img/projects-arrow.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		right: 0px;
+		top: 39%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		transform: rotate(180deg);
+	}
+}
+
+.projects-out__list-color {
+	display: flex;
+}
+.toggle-btn {
+	width: 50%;
+	height: 100%;
+	
+	
+}
+.toggle-btn img{
+	width: 17px;
+	height: 14px;
+	position: absolute;
+	
+	
+}
+#toggle-btn-block img{
+	left: 23px;
+	top: 47%;
+	transform: translateY(-50%);
+	z-index: 9999;
+}
+#toggle-btn-list img{
+	right: 23px;
+	top: 47%;
+	transform: translateY(-50%);
+	z-index: 9999;
+}
+

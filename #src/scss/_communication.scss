@@ -1,0 +1,116 @@
+.communication {
+	padding-top: 200px;
+	&__title {
+		margin-bottom: 12px;
+	}
+	&__subtitle {
+		margin-bottom: 60px;
+	}
+	&-bot {
+		padding: 25px 70px 0px;
+		max-width: 720px;
+   	height: 370px;
+		margin: 0 auto;
+		overflow-y: scroll;
+	}
+	&-form {
+		margin-top: 30px;
+
+	}
+}
+
+.bot-message {
+	color: #fff;
+	position: relative;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	margin-bottom: 50px;
+	
+	&::after {
+		content: '';
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		background-color: #fff;
+		left: -55px;
+		top: -24px;
+		border-radius: 50%;
+		background-image: url('../img/bot-logo.svg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: auto;
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+
+	}
+}
+.user-message {
+	
+	
+	color: #fff;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 50px;
+	
+	&::after {
+		content: 'ВЫ';
+		letter-spacing: 0.3px;
+		font-size: 12px;
+		line-height: 22px;
+		font-weight: 500;
+		color: #6B3BD8;
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		background-color: #fff;
+		right: -55px;
+		top: -24px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+
+	}
+}
+.time-bot,
+.time-user {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 22px;
+	letter-spacing: 0.3px;
+	color: rgba(47, 47, 47, 0.54);
+	position: absolute;
+	top: -25px;
+	max-width: 338px;
+}
+.time-bot {
+	left: 0px;
+}
+.time-user {
+	right: 0px;
+}
+.message__wrapper {
+	display: inline-block;
+	background-color: #6B3BD8;
+	max-width: 400px;
+	padding: 10px 15px;
+	border-radius: 12px 0px 12px 12px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	word-break: break-word;
+
+	
+	
+}
+
+.bot__style {
+	background-color: #659DEA;
+	border-radius: 0px 12px 12px 12px;
+
+}

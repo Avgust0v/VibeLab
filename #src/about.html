@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+		<link rel="stylesheet" href="css/style.min.css">
+		<script  src = " https : //unpkg.com/cookielib/src/cookie.min.js " defer> </script>
+		<script src="js/cookie.min.js" defer></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js" defer></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js" defer></script>
+		<script src="js/script.js" defer></script>
+		<title>VibeLab</title>
+	</head>
+	<body >
+		<div class="body__wrapper">
+			@@include('_header.html')
+			<div  class="main">
+				<div class="container">
+					<p class="landing-link">О лаборатории</p>
+					<h2 class="title about__title">Информация</h2>
+					<div class="about__inner">
+						<div class="about__map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.5948596927792!2d30.322236986449333!3d59.97204366491195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469633e290efffff%3A0xa7ade88373caeeae!2z0JvQrdCi0Jg!5e0!3m2!1sru!2sru!4v1634923682038!5m2!1sru!2sru" width="500px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+						<div class="about__content">
+							<p class="about__content-text">
+								Лаборатория позиционирует свою работу, как крупная коммерческая компания. Это означает, что каждый проект проходит весь цикл разработки: от утверждения технического задания до тестирования, что позволяет создавать продукты с высоким качеством. Параллельно с этим в лаборатории участвуют лучшие специалисты среди студенческой среды, которые проходят долгий и сложный отбор.
+							</p>
+							<p class="about__content-text">
+								Мы любим сложные и интересные задачи, которые требует исследований и инноваций в вашей области. С другой стороны, чисто технические задания выполняются нами по определенным, оптимально выстроенным процессам и подходам.
+							</p>
+							
+
+						
+						</div>
+					</div>
+					<h2 class=" title">Участники</h2>
+					<div class="about__btns">
+						<div id="about-btns" class="about__btns-box">
+							<button id="all" class="about__btn about__btn--active">ВСЕ  </button>
+							<button id="ios" class="about__btn">iOS</button>
+							<button id="android" class="about__btn">Android</button>
+							<button id="frontend" class="about__btn">Frontend</button>
+							<button id="backend" class="about__btn">Backend</button>
+							<button id="project manager" class="about__btn">Project Manager</button>
+							<button id="design" class="about__btn">Design</button>
+							<button id="content" class="about__btn">Content</button>
+							<button id="qa" class="about__btn">QA</button>
+							<button id="graduates" class="about__btn">ВЫПУСКНИКИ</button>
+						</div>
+						<div id="toggle" class="toggle ">
+							<div id="toggle-btn-block" class="toggle-btn"> <img src="img/square.svg" alt="">  <span id="toggle-active" class="toggle-active"></span></div>
+							<div id="toggle-btn-list" class="toggle-btn"><img src="img/line.svg" alt="">  </div>
+						</div>
+						
+						
+					</div>
+					<ul id="about__developers-out" class="about__developers">
+						
+						 
+
+
+
+
+
+
+
+						
+						<!--<li class="about__developer-list">
+							<img src="img/programmer.png" alt="img" class="about__developer-list-minimg">
+							<p class="about__developer-list-name">Владислав Матыгин</p>
+							<div class="about__developer-list-items">
+								<div class="about__developer-list-item slack"></div>
+								<div class="about__developer-list-item telegram"></div>
+								<div class="about__developer-list-item github"></div>
+							</div>
+							<p class="about__developer-list-text">Немного текста об участнике
+								И еще немного текста
+							</p>
+							<div class="about__developer-list-skills">
+								<div class="about__developer-skill skill-blue">IOS</div>
+								<div class="about__developer-skill skill-green ">Android</div>
+								<div class="about__developer-skill skill-orange">Frontend</div>
+							</div>
+						</li>
+						<li class="about__developer-list">
+							<img src="img/programmer.png" alt="img" class="about__developer-list-minimg">
+							<p class="about__developer-list-name">Никон Кукар</p>
+							<div class="about__developer-list-items">
+								<div class="about__developer-list-item slack"></div>
+								<div class="about__developer-list-item telegram"></div>
+								<div class="about__developer-list-item github"></div>
+							</div>
+							<p class="about__developer-list-text">Немного текста об участнике
+								И еще немного текста
+							</p>
+							<div class="about__developer-list-skills">
+								<div class="about__developer-skill skill-blue">IOS</div>
+								<div class="about__developer-skill skill-green ">Android</div>
+								<div class="about__developer-skill skill-orange">Frontend</div>
+							</div>
+						</li> -->
+						
+					</ul>
+				</div>
+			</div>
+			@@include('_footer.html')
+		</div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,48 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, #6b32f0 0%, #2BBDEF 100%);
+	z-index: 5;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 42px;
+		height: 43px;
+		background-image: url('../img/etu.svg');
+		bottom: 4%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&.done {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.loader {
+	position: absolute;
+	width: 240px;
+	height: 210px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	animation: 1.5s pulse infinite linear;
+}
+
+@keyframes pulse {
+	0% {
+		transform: translate(-50%,-50%) scale(1);
+	}
+	50% {
+		transform: translate(-50%,-50%) scale(1.2);
+	}
+	100% {
+		transform: translate(-50%,-50%) scale(1);
+	}
+}
+
